@@ -1,6 +1,6 @@
 baseURL: "https://wamansou.github.io/"
 languageCode: "en-us"
-title: "Hugo Profile"
+title: "Wael Mansour"
 theme: hugo-profile
 
 outputs:
@@ -29,17 +29,17 @@ markup:
       unsafe: true
 
 Menus:
-  main:
-    - identifier: blog
-      name: Blog
-      title: Blog posts
-      url: /blogs
-      weight: 1
-    - identifier: gallery
-      name: Gallery
-      title: Blog posts
-      url: /gallery
-      weight: 2
+  # main:
+  #   - identifier: blog
+  #     name: Blog
+  #     title: Blog posts
+  #     url: /blogs
+  #     weight: 1
+    # - identifier: gallery
+    #   name: Gallery
+    #   title: Blog posts
+    #   url: /gallery
+    #   weight: 2
     #Dropdown menu
     # - identifier: dropdown
     #   title: Example dropdown menu
@@ -59,8 +59,8 @@ Menus:
     #   weight: 2
 
 params:
-  title: "Hugo Profile"
-  description: Text about my cool site
+  title: "Wael's Profile"
+  description: "Wael Mansour — Data Scientist / AI Engineer"
   # staticPath: ""  # The path to serve the static files from
   favicon: "/fav.png"
 
@@ -82,7 +82,7 @@ params:
 
   theme:
     # disableThemeToggle: true
-    # defaultTheme: "light" # dark
+    defaultTheme: "dark" # dark
 
   font:
     fontSize: 1rem # default: 1rem
@@ -115,7 +115,7 @@ params:
     align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
     # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
     # showBrandLogo: false # Show brand logo in nav bar | default is true
-    brandName: "Hugo Profile" # Brand name for the brand | default is the title variable
+    brandName: "Wael Mansour" # Brand name for the brand | default is the title variable
     disableSearch: false
     # searchPlaceholder: "Search"
     stickyNavBar:
@@ -126,136 +126,116 @@ params:
       disableAbout: false
       disableExperience: false
       disableEducation: false
-      disableProjects: false
-      disableAchievements: false
+      disableProjects: true
+      disableAchievements: true
       disableContact: false
 
   # Hero
   hero:
     enable: true
     intro: "Hi, my name is"
-    title: "Isabella."
-    subtitle: "I build things for the web"
-    content: "A passionate web app developer. I tend to make use of modern web technologies to build websites that look great, feel fantastic, and function correctly."
-    image: /images/hero.svg
+    title: "Wael."
+    subtitle: "Data Scientist / AI Engineer"
+    content: "Tech lead building privacy-first, on-prem ML systems (air-gapped deployments, encryption, PII redaction) for regulated environments—especially healthcare."
+    image: /images/cropped_photo.jpeg
     bottomImage:
       enable: true
-    # roundImage: true # Make hero image circular | default false
+    roundImage: true # Make hero image circular | default false
     button:
       enable: true
-      name: "Resume"
-      url: "#"
+      name: "Download Resume"
+      url: "/Wael_Mansour_CV.pdf"
       download: true
       newPage: false
     socialLinks:
       fontAwesomeIcons:
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/wael94/
         - icon: fab fa-github
-          url: https://example.com
-        - icon: fab fa-x-twitter
-          url: https://example.com
-      customIcons:
-        - icon: /fav.png
-          url: "https://example.com"
+          url: https://github.com/wamansou
+        - icon: fa-solid fa-globe
+          url: https://cv.waelmansour.com/
+      # customIcons:
+      #   - icon: /fav.png
+      #     url: "https://example.com"
 
   # About
   about:
     enable: true
     title: "About Me"
-    image: "/images/me.png"
+    image: "/images/1645630727089.jpeg"
     content: |-
-      I am a software developer with a passion for web development. I have a background in computer science and mathematics, and I have a strong interest in the intersection of technology and art. I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA.
+      Data Scientist / AI Engineer specializing in privacy-first, on-prem ML systems (air-gapped deployments, encryption, PII redaction) for regulated environments—especially healthcare.
 
-      I am currently working on a project that will be used to help people find the best way to get around the city.
+      Tech lead delivering production NLP + computer vision pipelines for high-volume clinical document and communication workflows (100k+ documents/day; supporting 1.5M+ patients in the UK).
+
+      Applied research experience in computer vision and generative AI for space/low-gravity experimentation (plant root stress detection and simulation to reduce experimentation cost). Based in Saxony, Germany and open to Germany-based remote/hybrid roles.
     skills:
       enable: true
       title: "Here are a few technologies I've been working with recently:"
       items:
-        - "HTML"
-        - "CSS"
-        - "JavaScript"
-        - "React"
-        - "Node"
-        - "Express"
+        - "PyTorch / TensorFlow / Transformers"
+        - "NLP (NER, IE, document understanding)"
+        - "RAG (vector DBs, LangChain, ChromaDB)"
+        - "Computer Vision (document + research imaging)"
+        - "Privacy-first AI (on-prem, air-gapped, PII redaction)"
+        - "HuggingFace ecosystem / Gradio"
+        - "SQL / Power BI / Tableau"
+        - "GCP / Azure / OpenAI platform"
+        - "Docker"
 
   # Experience
   experience:
     enable: true
     # title: "Custom Name"
     items:
-      - company: "Facebook"
-        companyUrl: "https://example.com"
+      - company: "Kynoby AI"
         jobs:
-          - name: "Senior Software Developer"
-            date: "Jan 2023 - present"
-            content: "I am currently working as a senior software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
-            info:
-              content: Working as a senior software developer
-            featuredItems:
-              fontAwesomeIcons:
-                - icon: fa-brands fa-react
-                  url: https://react.dev/
-                  tooltip: Example tooltip content
-                - icon: fab fa-x-twitter
-                  url: https://example.com
-                  # tooltip: Example tooltip content
-              customIcons:
-                - icon: /fav.png
-                  url: "https://example.com"
-                  tooltip: Example tooltip content
-          - name: "Software Developer"
-            date: "Jan 2022 - Dec 2023"
-            content: "I worked as a software developer. I worked on a project that will be used to help people find the best way to get around the city."
+          - name: "Artificial Intelligence Engineer (Tech Lead)"
+            date: "Mar 2023 – present"
+            content: |-
+              United Kingdom
 
-      - company: "Amazon"
-        companyUrl: "https://example.com"
+              - Lead design and delivery of privacy-first AI systems for healthcare communication workflows, deployed on-prem in air-gapped environments with encryption and PII redaction.
+              - Built end-to-end medical letter and document processing pipelines combining NLP and computer vision for classification, extraction, triage, and routing at scale (100k+ documents/day).
+              - Delivered production systems supporting 1.5M+ patients in the UK, improving operational throughput and standardization of clinical communication handling.
+              - Owned multiple automation products (patient communication handling, hospital communication handling, repeat-prescription automation).
+              - Drive technical direction across model selection, evaluation, and deployment constraints (latency, confidentiality, reliability), aligning stakeholders on measurable outcomes.
+
+      - company: "Hochschule Mittweida"
         jobs:
-          - name: "Software Developer"
-            date: "Sep 2020 - Dec 2021"
-            info:
-              content: I worked as a software developer for more than one year in Amazon.
-            content: |
-              I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+          - name: "Research Assistant (Programming & Data Science - Space Applications)"
+            date: "Mar 2024 – present"
+            content: |-
+              Germany
 
-              - Lead backend developer for a product.
-              - Created a frontend design for a product.
+              - Develop computer-vision pipelines to detect stress signals in plant roots under space/low-gravity experiment conditions.
+              - Apply generative AI methods to simulate experimental conditions to reduce cost and accelerate land-based testing cycles.
+              - Collaborate with interdisciplinary research teams, translating experimental goals into data collection, modeling, and evaluation workflows.
+              - Build reproducible analysis workflows for research data, enabling iterative experimentation and model improvement.
 
-      - company: "Apple"
-        companyUrl: "https://example.com"
-        jobs: 
-        - name: "Junior Software Developer"
-          date: "Jan 2020 - Aug 2020"
-          featuredItems:
-            fontAwesomeIcons:
-              - icon: fa-brands fa-react
-                url: https://react.dev/
-              - icon: fab fa-x-twitter
-                url: https://example.com
-            customIcons:
-              - icon: /fav.png
-                url: "https://example.com"
-          content: |
-            I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-
-            - Lead backend developer for a product.
-            - Created a frontend design for a product.
-
-      - company: "Netflix"
-        companyUrl: "https://example.com"
+      - company: "Kaplan Professional"
         jobs:
-        - name: "UI/UX Designer"
-          date: "June 2017 - Nov 2019"
-          content: |
-            I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+          - name: "Assistant Teacher of Data Science and Artificial Intelligence"
+            date: "Sept 2021 – Dec 2022"
+            content: |-
+              Saudi Arabia
 
-            - Lead backend developer for a product.
-            - Created a frontend design for a product.
+              - Taught statistics and machine learning in a bootcamp environment to large cohorts (200–300 students).
+              - Delivered practical instruction in Python-based data science workflows, covering data preparation, modeling, and evaluation fundamentals.
+              - Mentored learners through applied ML exercises and projects; developed teaching materials and labs (private).
 
-      - company: "Google"
-        companyUrl: "https://example.com"
+      - company: "Artemis-Research"
         jobs:
-        - name: "Product Designer"
-          date: "Feb 2016 - Mar 2017"
-          content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
+          - name: "Business Intelligence Analyst"
+            date: "May 2021 – Nov 2022"
+            content: |-
+              USA
+
+              - Produced recurring performance reporting (daily/weekly/monthly) across ~50 clinical sites to support operational and executive decision-making.
+              - Managed corporate patient database operations as a Salesforce administrator; implemented controls to improve data quality in medical research cycles.
+              - Built and maintained analytics workflows using SQL, BI dashboards (Power BI/Tableau), and Python-based analysis for ad-hoc executive requests.
+              - Partnered with stakeholders to define KPIs and standardize reporting outputs, reducing manual reporting friction and improving consistency.
 
   # Education
   education:
@@ -263,46 +243,41 @@ params:
     # title: "Custom Name"
     index: false
     items:
-      - title: "Master of Business Administration"
+      - title: "MSc — Data Science & Business Analytics"
         school:
-          name: "University of California, Berkeley"
-          url: "https://example.org"
-        date: "2013 - 2015"
-        GPA: "3.8 out of 5.0"
+          name: "W. P. Carey School of Business, Arizona State University"
+        date: "Aug 2020 – Dec 2021"
+        GPA: "4.00"
         content: |-
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-      - title: "Bachelor of Science in Computer Science"
-        school:
-          name: "Massachusetts Institute of Technology"
-          url: "https://example.org"
-        date: "2009 - 2013"
-        GPA: "3.9 out of 5.0"
-        content: |-
-          I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
-          - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
-          - Face mask detection using a single convolutional neural network.
+          Tempe, AZ, USA
 
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-        featuredLink:
-          enable: true
-          name: "My academic record"
-          url: "https://example.com"
-      - title: "High School"
+          - Full scholarship
+          - Abdullah Al Ghurair Foundation for Education Scholarship Recipient
+
+      - title: "BSc — Applied Mathematics"
         school:
-          name: "Thomas Jefferson High School for Science and Technology."
-          url: "https://example.org"
-        GPA: "4.2 out of 5.0"
-        featuredLink:
-          enable: true
-          url: "https://example.com"
+          name: "Hochschule Mittweida"
+        date: "Aug 2023 – present"
+        content: |-
+          Germany
+
+          - Emphasis on mathematical modeling and data-driven methods for engineering and scientific applications.
+          - Applying applied mathematics to real-world ML problems, including vision-based analysis and generative modeling for experimental simulation.
+          - Research-oriented projects bridging mathematics, computer vision, and applied AI for space applications.
+
+      - title: "BSc — Logistics and Supply Chain Management"
+        school:
+          name: "College of International Transport and Logistics, AAST"
+        date: "Sept 2014 – Feb 2018"
+        GPA: "3.8"
+        content: |-
+          Alexandria, Egypt
+
+          - Full merit scholarship
 
   # Achievements
   achievements:
-    enable: true
+    enable: false
     # title: "Custom Name"
     items:
       - title: Google kickstart runner
@@ -324,7 +299,7 @@ params:
 
   # projects
   projects:
-    enable: true
+    enable: false
     # title: "Custom Name"
     items:
       - title: Hugo Profile
@@ -376,9 +351,9 @@ params:
   contact:
     enable: true
     # title: "Custom Name"
-    content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
-    btnName: Mail me
-    btnLink: mailto:gurusabarisha@gmail.com
+    content: "My inbox is always open — feel free to reach out about ML/AI roles, collaborations, or research." 
+    btnName: Email me
+    btnLink: mailto:wamansou@asu.edu
     # formspree:
     #   enable: true # `contact.email` value will be ignored
     #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
@@ -391,14 +366,11 @@ params:
       path: "blogs"
       count: 3
       title: Recent Posts
-      enable: true
+      enable: false
       disableFeaturedImage: false
     socialNetworks:
-      github: https://github.com
-      linkedin: https://linkedin.com
-      twitter: https://twitter.com
-      instagram: https://instagram.com
-      facebook: https://facebook.com
+      github: https://github.com/wamansou
+      linkedin: https://linkedin.com/in/wael94
 
   # List pages like blogs and posts
   listPages:
@@ -419,7 +391,7 @@ params:
   terms:
     read: "Read"
     toc: "Table Of Contents"
-    copyright: "All rights reserved"
+    copyright: "Wael Mansour"
     pageNotFound: "Page not found"
     emailText: "Check out this site"
 
