@@ -61,6 +61,7 @@ Menus:
 params:
   title: "Wael's Profile"
   description: "Wael Mansour — Data Scientist / AI Engineer"
+  customCSS: true
   # staticPath: ""  # The path to serve the static files from
   favicon: "/fav.png"
 
@@ -153,8 +154,8 @@ params:
           url: https://www.linkedin.com/in/wael94/
         - icon: fab fa-github
           url: https://github.com/wamansou
-        - icon: fa-solid fa-globe
-          url: https://cv.waelmansour.com/
+        # - icon: fa-solid fa-globe
+        #   url: https://cv.waelmansour.com/
       # customIcons:
       #   - icon: /fav.png
       #     url: "https://example.com"

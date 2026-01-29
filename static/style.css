@@ -1,0 +1,60 @@
+/* Custom overrides to make Experience tabs look like selectable options */
+#experience .nav {
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+#experience .nav-item .nav-link {
+    color: var(--text-color) !important;
+    background-color: var(--secondary-color) !important;
+    border: 1px solid var(--text-secondary-color) !important;
+    border-radius: 999px;
+    padding: 0.4rem 0.9rem;
+    font-weight: 500;
+    transition: none;
+    cursor: pointer;
+}
+
+#experience .nav-item .nav-link.active {
+    color: var(--secondary-color) !important;
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    opacity: 0.95;
+}
+
+#experience .nav-item .nav-link:hover {
+    border-color: var(--primary-color) !important;
+    opacity: 0.9;
+}
+
+@media all and (max-width:768px) {
+    #experience .nav-pills {
+        flex-direction: column;
+    }
+
+    #experience .nav-item {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    #experience .nav-link {
+        width: 100%;
+        text-align: left;
+        padding: 0.75rem 1rem !important;
+        border-radius: 0.5rem;
+        border-left: 3px solid transparent !important;
+        border-bottom: none !important;
+    }
+
+    #experience .nav-link.active {
+        border-left: 3px solid var(--primary-color) !important;
+        border-bottom: none !important;
+        background-color: var(--primary-color) !important;
+        color: var(--secondary-color) !important;
+    }
+
+    #experience .nav-link:hover {
+        border-left: 3px solid var(--primary-color) !important;
+        border-bottom: none !important;
+    }
+}
